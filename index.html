@@ -31,7 +31,7 @@
           <a href="#contact">Contact</a>
         </nav>
         <a class="btn dark" href="#contact">Get a Quote</a>
-     
+        <span class="mobile" aria-hidden="true">☰</span>
       </div>
     </header>
 
@@ -74,18 +74,33 @@
             <article class="tile">
               <div class="ico">💧</div>
               <h3>Waterproofing Chemicals</h3>
-              <p>Solutions for roofs, terraces, bathrooms, basements, water tanks, cracks and dampness control.</p>
+              <p>Solutions for roofs, terraces, bathrooms, basements, water tanks, cracks and dampness control, including APP sheets and bitumen primers.</p>
             </article>
             <article class="tile">
               <div class="ico">🧱</div>
               <h3>Construction Chemicals</h3>
-              <p>Tile adhesives, grouts, bonding agents, concrete admixtures, repair mortars, sealants and coatings.</p>
+              <p>Tile adhesives, grouts, bonding agents, concrete admixtures, repair mortars, sealants, coatings and fibreglass mesh.</p>
             </article>
             <article class="tile">
               <div class="ico">🏗️</div>
               <h3>Building Materials</h3>
-              <p>Construction essentials and finishing materials for residential and commercial projects.</p>
+              <p>Geotextile, aggregates, cement, bricks and a wide range of building materials for residential and commercial projects.</p>
             </article>
+          </div>
+
+          <div class="availability">
+            <h3>Brands &amp; materials available</h3>
+            <ul class="availability-list" aria-label="Available brands and materials">
+              <li>Sika</li>
+              <li>Fosroc</li>
+              <li>Astral</li>
+              <li>Chryso</li>
+              <li>APP sheets — multiple brands</li>
+              <li>Bitumen primers</li>
+              <li>Geotextile</li>
+              <li>Fibreglass (fiber) mesh — 45 gsm, 1 × 50 m roll</li>
+              <li>Building materials</li>
+            </ul>
           </div>
         </div>
       </section>
@@ -98,8 +113,20 @@
             <p>Durable products for daily site work, structural protection and finishing needs.</p>
           </div>
 
-          <div class="grid4">
-            <article class="product">
+          <div class="filter-bar" role="group" aria-label="Filter products by category">
+            <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">All products</button>
+            <button class="filter-btn" type="button" data-filter="waterproofing" aria-pressed="false">Waterproofing</button>
+            <button class="filter-btn" type="button" data-filter="construction" aria-pressed="false">Construction chemicals</button>
+            <button class="filter-btn" type="button" data-filter="bitumen" aria-pressed="false">Bitumen</button>
+            <button class="filter-btn" type="button" data-filter="cement" aria-pressed="false">Cement</button>
+            <button class="filter-btn" type="button" data-filter="masonry" aria-pressed="false">Masonry</button>
+            <button class="filter-btn" type="button" data-filter="geosynthetics" aria-pressed="false">Geosynthetics</button>
+            <button class="filter-btn" type="button" data-filter="aggregates" aria-pressed="false">Aggregates</button>
+          </div>
+          <p class="product-results" aria-live="polite"></p>
+
+          <div class="grid4 product-grid">
+            <article class="product" data-category="waterproofing construction">
               <div class="product-art">
                 <img src="images/Myk/1.jpg" alt="MYK AquaArm waterproof coating product" loading="lazy" />
               </div>
@@ -110,7 +137,7 @@
               </div>
             </article>
 
-            <article class="product">
+            <article class="product" data-category="waterproofing construction">
               <div class="product-art">
                 <img src="images/fosroc/1.jpeg" alt="Fosroc Brushbond RFX waterproofing product" loading="lazy" />
               </div>
@@ -121,7 +148,7 @@
               </div>
             </article>
 
-            <article class="product">
+            <article class="product" data-category="waterproofing construction">
               <div class="product-art">
                 <img src="images/Sika/1.jpg" alt="SikaTop Seal-107 waterproofing system" loading="lazy" />
               </div>
@@ -132,7 +159,7 @@
               </div>
             </article>
 
-            <article class="product">
+            <article class="product" data-category="waterproofing geosynthetics">
               <div class="product-art">
                 <img src="images/APP SHEET/prosheild.jpg" alt="Berger Proshield APP membrane" loading="lazy" />
               </div>
@@ -143,7 +170,7 @@
               </div>
             </article>
 
-            <article class="product">
+            <article class="product" data-category="bitumen waterproofing">
               <div class="product-art">
                 <img src="images/bitumen primer/A.k bitumen.jpg" alt="AK Bitumen Primer" loading="lazy" />
               </div>
@@ -154,7 +181,7 @@
               </div>
             </article>
 
-            <article class="product">
+            <article class="product" data-category="cement">
               <div class="product-art">
                 <img src="images/cement/acc-cement-587.jpg" alt="ACC Cement" loading="lazy" />
               </div>
@@ -165,7 +192,7 @@
               </div>
             </article>
 
-            <article class="product">
+            <article class="product" data-category="masonry">
               <div class="product-art">
                 <img src="images/brick.jpg" alt="Building Bricks" loading="lazy" />
               </div>
@@ -176,7 +203,7 @@
               </div>
             </article>
 
-            <article class="product">
+            <article class="product" data-category="geosynthetics">
               <div class="product-art">
                 <img src="images/Nonwoven-Geotextile.jpg" alt="Nonwoven Geotextile" loading="lazy" />
               </div>
@@ -185,6 +212,129 @@
                 <p>Geotextile fabric for separation, reinforcement and civil construction use.</p>
                 <a href="#contact">Enquire now</a>
               </div>
+            </article>
+
+            <article class="product" data-category="waterproofing">
+              <div class="product-art"><img src="images/Myk/2.webp" alt="MYK product image 2" loading="lazy" /></div>
+              <div class="product-body"><h3>MYK Waterproofing Range</h3><p>Explore this product option from the MYK range. Contact us for details and availability.</p><a href="#contact">Enquire now</a></div>
+            </article>
+            <article class="product" data-category="waterproofing">
+              <div class="product-art"><img src="images/Myk/3.png" alt="MYK product image 3" loading="lazy" /></div>
+              <div class="product-body"><h3>MYK Product Range</h3><p>Explore this product option from the MYK range. Contact us for details and availability.</p><a href="#contact">Enquire now</a></div>
+            </article>
+            <article class="product" data-category="waterproofing">
+              <div class="product-art"><img src="images/Myk/4.jpg" alt="MYK product image 4" loading="lazy" /></div>
+              <div class="product-body"><h3>MYK Product Range</h3><p>Explore this product option from the MYK range. Contact us for details and availability.</p><a href="#contact">Enquire now</a></div>
+            </article>
+
+            <article class="product" data-category="construction waterproofing">
+              <div class="product-art"><img src="images/fosroc/2.jpg" alt="Fosroc product image 2" loading="lazy" /></div>
+              <div class="product-body"><h3>Fosroc Product Range</h3><p>Explore this product option from the Fosroc range. Contact us for details and availability.</p><a href="#contact">Enquire now</a></div>
+            </article>
+            <article class="product" data-category="construction waterproofing">
+              <div class="product-art"><img src="images/fosroc/3.webp" alt="Fosroc product image 3" loading="lazy" /></div>
+              <div class="product-body"><h3>Fosroc Product Range</h3><p>Explore this product option from the Fosroc range. Contact us for details and availability.</p><a href="#contact">Enquire now</a></div>
+            </article>
+            <article class="product" data-category="construction waterproofing">
+              <div class="product-art"><img src="images/fosroc/4.jpeg" alt="Fosroc product image 4" loading="lazy" /></div>
+              <div class="product-body"><h3>Fosroc Product Range</h3><p>Explore this product option from the Fosroc range. Contact us for details and availability.</p><a href="#contact">Enquire now</a></div>
+            </article>
+            <article class="product" data-category="construction waterproofing">
+              <div class="product-art"><img src="images/fosroc/5.jpg" alt="Fosroc product image 5" loading="lazy" /></div>
+              <div class="product-body"><h3>Fosroc Product Range</h3><p>Explore this product option from the Fosroc range. Contact us for details and availability.</p><a href="#contact">Enquire now</a></div>
+            </article>
+            <article class="product" data-category="construction waterproofing">
+              <div class="product-art"><img src="images/fosroc/6.webp" alt="Fosroc product image 6" loading="lazy" /></div>
+              <div class="product-body"><h3>Fosroc Product Range</h3><p>Explore this product option from the Fosroc range. Contact us for details and availability.</p><a href="#contact">Enquire now</a></div>
+            </article>
+            <article class="product" data-category="construction waterproofing">
+              <div class="product-art"><img src="images/fosroc/7.jpeg" alt="Fosroc product image 7" loading="lazy" /></div>
+              <div class="product-body"><h3>Fosroc Product Range</h3><p>Explore this product option from the Fosroc range. Contact us for details and availability.</p><a href="#contact">Enquire now</a></div>
+            </article>
+            <article class="product" data-category="construction waterproofing">
+              <div class="product-art"><img src="images/fosroc/8.jpg" alt="Fosroc product image 8" loading="lazy" /></div>
+              <div class="product-body"><h3>Fosroc Product Range</h3><p>Explore this product option from the Fosroc range. Contact us for details and availability.</p><a href="#contact">Enquire now</a></div>
+            </article>
+            <article class="product" data-category="construction waterproofing">
+              <div class="product-art"><img src="images/fosroc/9.webp" alt="Fosroc product image 9" loading="lazy" /></div>
+              <div class="product-body"><h3>Fosroc Product Range</h3><p>Explore this product option from the Fosroc range. Contact us for details and availability.</p><a href="#contact">Enquire now</a></div>
+            </article>
+            <article class="product" data-category="construction waterproofing">
+              <div class="product-art"><img src="images/fosroc/10.jpg" alt="Fosroc product image 10" loading="lazy" /></div>
+              <div class="product-body"><h3>Fosroc Product Range</h3><p>Explore this product option from the Fosroc range. Contact us for details and availability.</p><a href="#contact">Enquire now</a></div>
+            </article>
+            <article class="product" data-category="construction waterproofing">
+              <div class="product-art"><img src="images/fosroc/11.webp" alt="Fosroc product image 11" loading="lazy" /></div>
+              <div class="product-body"><h3>Fosroc Product Range</h3><p>Explore this product option from the Fosroc range. Contact us for details and availability.</p><a href="#contact">Enquire now</a></div>
+            </article>
+            <article class="product" data-category="construction waterproofing">
+              <div class="product-art"><img src="images/fosroc/12.jpg" alt="Fosroc product image 12" loading="lazy" /></div>
+              <div class="product-body"><h3>Fosroc Product Range</h3><p>Explore this product option from the Fosroc range. Contact us for details and availability.</p><a href="#contact">Enquire now</a></div>
+            </article>
+            <article class="product" data-category="construction waterproofing">
+              <div class="product-art"><img src="images/fosroc/13.jpg" alt="Fosroc product image 13" loading="lazy" /></div>
+              <div class="product-body"><h3>Fosroc Product Range</h3><p>Explore this product option from the Fosroc range. Contact us for details and availability.</p><a href="#contact">Enquire now</a></div>
+            </article>
+            <article class="product" data-category="construction waterproofing">
+              <div class="product-art"><img src="images/fosroc/14.jpg" alt="Fosroc product image 14" loading="lazy" /></div>
+              <div class="product-body"><h3>Fosroc Product Range</h3><p>Explore this product option from the Fosroc range. Contact us for details and availability.</p><a href="#contact">Enquire now</a></div>
+            </article>
+            <article class="product" data-category="construction waterproofing">
+              <div class="product-art"><img src="images/fosroc/15.jpg" alt="Fosroc product image 15" loading="lazy" /></div>
+              <div class="product-body"><h3>Fosroc Product Range</h3><p>Explore this product option from the Fosroc range. Contact us for details and availability.</p><a href="#contact">Enquire now</a></div>
+            </article>
+
+            <article class="product" data-category="waterproofing construction">
+              <div class="product-art"><img src="images/Sika/2.jpeg" alt="Sika product image 2" loading="lazy" /></div>
+              <div class="product-body"><h3>Sika Product Range</h3><p>Explore this product option from the Sika range. Contact us for details and availability.</p><a href="#contact">Enquire now</a></div>
+            </article>
+            <article class="product" data-category="waterproofing construction">
+              <div class="product-art"><img src="images/Sika/3.jpeg" alt="Sika product image 3" loading="lazy" /></div>
+              <div class="product-body"><h3>Sika Product Range</h3><p>Explore this product option from the Sika range. Contact us for details and availability.</p><a href="#contact">Enquire now</a></div>
+            </article>
+            <article class="product" data-category="waterproofing construction">
+              <div class="product-art"><img src="images/Sika/4.jpeg" alt="Sika product image 4" loading="lazy" /></div>
+              <div class="product-body"><h3>Sika Product Range</h3><p>Explore this product option from the Sika range. Contact us for details and availability.</p><a href="#contact">Enquire now</a></div>
+            </article>
+
+            <article class="product" data-category="waterproofing geosynthetics">
+              <div class="product-art"><img src="images/APP SHEET/1.jpeg" alt="APP waterproofing membrane product image 1" loading="lazy" /></div>
+              <div class="product-body"><h3>APP Membrane Range</h3><p>Explore this membrane option. Contact us for details and suitable applications.</p><a href="#contact">Enquire now</a></div>
+            </article>
+            <article class="product" data-category="waterproofing geosynthetics">
+              <div class="product-art"><img src="images/APP SHEET/2.webp" alt="APP waterproofing membrane product image 2" loading="lazy" /></div>
+              <div class="product-body"><h3>APP Membrane Range</h3><p>Explore this membrane option. Contact us for details and suitable applications.</p><a href="#contact">Enquire now</a></div>
+            </article>
+
+            <article class="product" data-category="bitumen waterproofing">
+              <div class="product-art"><img src="images/bitumen primer/3.png" alt="Bitumen primer product image" loading="lazy" /></div>
+              <div class="product-body"><h3>Bitumen Primer Range</h3><p>Explore this primer option. Contact us for details and suitable applications.</p><a href="#contact">Enquire now</a></div>
+            </article>
+            <article class="product" data-category="bitumen waterproofing">
+              <div class="product-art"><img src="images/bitumen primer/berger.jpg" alt="Berger bitumen primer product" loading="lazy" /></div>
+              <div class="product-body"><h3>Berger Bitumen Primer</h3><p>Bitumen primer option for compatible construction and waterproofing systems.</p><a href="#contact">Enquire now</a></div>
+            </article>
+
+            <article class="product" data-category="cement">
+              <div class="product-art"><img src="images/cement/image.jpg" alt="Cement product image" loading="lazy" /></div>
+              <div class="product-body"><h3>Cement Product Range</h3><p>Explore this cement option. Contact us for brand details and availability.</p><a href="#contact">Enquire now</a></div>
+            </article>
+            <article class="product" data-category="cement">
+              <div class="product-art"><img src="images/cement/images.jpg" alt="Cement product image" loading="lazy" /></div>
+              <div class="product-body"><h3>Cement Product Range</h3><p>Explore this cement option. Contact us for brand details and availability.</p><a href="#contact">Enquire now</a></div>
+            </article>
+
+            <article class="product" data-category="aggregates">
+              <div class="product-art"><img src="images/Aggregates.jpg" alt="Construction aggregates" loading="lazy" /></div>
+              <div class="product-body"><h3>Construction Aggregates</h3><p>Aggregates for a variety of civil and construction applications.</p><a href="#contact">Enquire now</a></div>
+            </article>
+            <article class="product" data-category="aggregates">
+              <div class="product-art"><img src="images/sand.webp" alt="Construction sand" loading="lazy" /></div>
+              <div class="product-body"><h3>Construction Sand</h3><p>Sand options for general building and construction requirements.</p><a href="#contact">Enquire now</a></div>
+            </article>
+            <article class="product" data-category="construction geosynthetics">
+              <div class="product-art"><img src="images/fibreglass-mesh.webp" alt="Fibreglass reinforcement mesh" loading="lazy" /></div>
+              <div class="product-body"><h3>Fibreglass Mesh</h3><p>Reinforcement mesh for suitable surface and construction applications.</p><a href="#contact">Enquire now</a></div>
             </article>
           </div>
         </div>
@@ -294,7 +444,7 @@
         <div>
           <h4>Contact</h4>
           <a href="tel:+918952823384">+91 89528 23384</a>
-          <a href="mailto:hello@buildshieldmaterials.com">hello@buildshieldmaterials.com</a>
+          <a href="mailto:hello@buildshieldmaterials.com">gkbuildsheild@gmail.com</a>
           <a href="#">Jaipur, Rajasthan</a>
         </div>
       </div>
@@ -303,6 +453,34 @@
 
     <script>
       document.getElementById('year').textContent = new Date().getFullYear();
+
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const productCards = document.querySelectorAll('.product');
+      const productResults = document.querySelector('.product-results');
+
+      productResults.textContent = `Showing all ${productCards.length} products`;
+
+      filterButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+          const filter = button.dataset.filter;
+          let visibleCount = 0;
+
+          filterButtons.forEach((btn) => {
+            const isActive = btn === button;
+            btn.classList.toggle('active', isActive);
+            btn.setAttribute('aria-pressed', String(isActive));
+          });
+
+          productCards.forEach((card) => {
+            const categories = (card.dataset.category || '').split(' ');
+            const matches = filter === 'all' || categories.includes(filter);
+            card.classList.toggle('hidden', !matches);
+            if (matches) visibleCount += 1;
+          });
+
+          productResults.textContent = `Showing ${visibleCount} ${visibleCount === 1 ? 'product' : 'products'}`;
+        });
+      });
     </script>
   </body>
 </html>
